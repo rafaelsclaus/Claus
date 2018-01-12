@@ -40,7 +40,7 @@ platform :android do
 
     hockey(
       api_token: "452430e865d944509238cd84def2fe10",
-  	  apk: "app/build/outputs/apk/app-hockeyApp.apk",
+  	  apk: "app/release/app-release.apk",
   	  notes: "yay!",
   	  notify: "0"
     )
