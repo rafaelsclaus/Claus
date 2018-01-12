@@ -31,4 +31,18 @@ platform :android do
     gradle(task: "assembleRelease")
     upload_to_play_store
   end
+
+  lane :hockeyapp do
+    gradle(
+  	  task: 'assemble',
+  	  build_type: 'hockeyApp'
+    )
+
+    hockey(
+      api_token: "452430e865d944509238cd84def2fe10",
+  	  apk: "app/build/outputs/apk/app-hockeyApp.apk",
+  	  notes: "yay!",
+  	  notify: "0"
+    )
+  end
 end
