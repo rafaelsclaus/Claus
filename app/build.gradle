@@ -13,9 +13,9 @@ android {
     signingConfigs{
         hockeyApp{
             storeFile file("android.jks")
-            storePassword 'B60bea8290'
+            storePassword 'root123'
             keyAlias "Android_key"
-            keyPassword 'root123'
+            keyPassword 'B60bea8290'
         }
     }
     buildTypes {
